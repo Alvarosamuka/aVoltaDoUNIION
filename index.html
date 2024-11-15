@@ -13,20 +13,22 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <span class="logo-text">UNI<span class="logo-highlight">ION</span></span>
+                <a href="index.html">
+                    <span class="logo-text">UNI<span class="logo-highlight">ION</span></span>
+                </a>
             </div>
             
             <!-- Menu Desktop -->
             <ul class="nav-menu">
                 <li>
-                    <a href="#treine">
+                    <a href="#treine" class="nav-train-button">
                         <i class="fas fa-gamepad"></i> 
                         Treine
                         <span class="desktop-points">+10 XP/treino</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#cursos">
+                    <a href="courses.html">
                         <i class="fas fa-book-open"></i> 
                         Cursos
                         <span class="desktop-badge">3</span>
@@ -47,19 +49,28 @@
                 </li>
             </ul>
 
-            <!-- Sistema de XP Desktop -->
-            <div class="desktop-xp-container">
-                <div class="xp-info">
-                    <div class="xp-level-badge">
-                        <span class="current-level">1</span>
-                    </div>
-                    <div class="xp-details">
-                        <div class="xp-progress-bar">
-                            <div class="xp-progress" style="width: 60%"></div>
+            <!-- Controles do Header -->
+            <div class="header-controls">
+                <!-- Sistema de XP Desktop -->
+                <div class="desktop-xp-container">
+                    <div class="xp-info">
+                        <div class="xp-level-badge">
+                            <span class="current-level">1</span>
                         </div>
-                        <span class="xp-count">120/200 XP</span>
+                        <div class="xp-details">
+                            <div class="xp-progress-bar">
+                                <div class="xp-progress" style="width: 60%"></div>
+                            </div>
+                            <span class="xp-count">120/200 XP</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Botão de tema -->
+                <button class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
             </div>
         </nav>
     </header>
@@ -70,7 +81,7 @@
             <i class="fas fa-gamepad"></i>
             <span>Treine</span>
         </a>
-        <a href="#cursos" class="mobile-nav-item">
+        <a href="courses.html" class="mobile-nav-item">
             <i class="fas fa-book-open"></i>
             <span>Cursos</span>
             <span class="points-badge">3</span>
